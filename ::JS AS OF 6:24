@@ -1,3 +1,5 @@
+//JS AS OF 6:24
+
 
 var player1 = prompt('What is your name?', 'type name'); //got working & saved to variable
 var player2 = prompt('Hey, how bout you?', 'type name'); //got working & saved to variable
@@ -13,9 +15,10 @@ var currentPlayer = 1;
 var start = function () {
 	var currentPlayer = '1';
 
-	tileOne.innerHTML='';
+	tileOne.innerHTML = '';
 	tileOne.addEventListener('click', function(){
 		evenAndOddTurns(tileOne);
+		// document.getElementById('tileOne').removeAttribute('onclick');
 		// console.log('Fn addingClickListener ran')
 		//Commented out ^^^ because it was causing an issue, will revisit later time willing
 	});	
@@ -24,7 +27,7 @@ var start = function () {
 	tileTwo.addEventListener('click', function(){
 		evenAndOddTurns(tileTwo);
 	});
-
+	
 	tileThree.innerHTML='';
 	tileThree.addEventListener('click', function(){
 		evenAndOddTurns(tileThree);
@@ -46,7 +49,7 @@ var start = function () {
 	});
 
 	tileSeven.innerHTML='';
-	tileSeven.addEventListener('click',function(){
+	tileEight.addEventListener('click',function(){
 		evenAndOddTurns(tileSeven);
 	});
 
@@ -58,7 +61,10 @@ var start = function () {
 	tileNine.innerHTML='';
 	tileNine.addEventListener('click', function(){
 		evenAndOddTurns(tileNine);
+
 	});
+
+
 
 	playerOneBox.innerHTML='';
 	playerTwoBox.innerHTML='';
@@ -69,28 +75,25 @@ var start = function () {
 	//now need to get var player1 and player2 and append child of the player console
 	}
 
-start();
+
 
 var evenAndOddTurns = function(tiles) {
 	console.log(tiles.innerHTML);
 	
-	if (tiles.innerHTML == '') {	//TRACKING: IF FOR HAS NO TEXT, IE CLICKABLE
-		
+	if (tiles.innerHTML == ''){	
 		if (currentPlayer == 1) {
-			console.log(tiles.innerHTML);
 			tiles.innerHTML = 'x'; 
 			currentPlayer = 2;
-			//return 'booting out';
-		} else {
-				console.log(tiles.innerHTML);
+			return 'booting out';
+		} else if (currentPlayer != 1) {
+			if (tiles.innerHTML = ''){
 		  		 tiles.innerHTML = 'o';
 		  		 //Citing help from Josie, who correctly noticed I had == 'o' when I needed ='o'
+		  		 //APPENDTILETOPLAYERTWOTILES ARRAY
 		 		 currentPlayer = 1;
-                 // return 'booting out';
+		  		 return 'booting out';
+		  		}
 		} 
-	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
-		alert("Sorry, that was already clicked");
-		}
+	}
+// winnerWinner();
 }
-
-
