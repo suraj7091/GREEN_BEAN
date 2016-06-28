@@ -8,10 +8,10 @@ var settingUpNames = function() {
 	//Tested & works: Also not the ideal way to do this, I wanted again to get element by id and append child, but couldn't figure it out. I'm rolling with this and will return to it time permitting
 }
 
-var currentPlayer = '';
+var currentPlayer = 1;
 
 var start = function () {
-	currentPlayer = 1;
+	var currentPlayer = '1';
 
 	tile1a.innerHTML='';
 	tile1a.addEventListener('click', function(){
@@ -71,16 +71,16 @@ var start = function () {
 start();
 
 var evenAndOddTurns = function(tiles) {
-	if (currentPlayer = 1) {
-		this.innerHTML = 'X'; 
+	if (currentPlayer == 1) {
+		tiles.innerHTML = 'X'; 
 		currentPlayer =2;
 		return 'booting out';
-	} else {
-		this.innerHTML = 'O';
+	} else if (currentPlayer != 1) {
+		tiles.innerHTML == 'O';
 		currentPlayer = 1;
 		return 'booting out';
 	}
-ß}
+}
 
 	//First crack at this: I bet it breaks
 	//BUT: KEY FEATURES I AM DRIVING AT HERE: 
@@ -147,3 +147,8 @@ var evenAndOddTurns = function(tiles) {
     // 	alert the user that the tile has been clicked
     // }
     // NOTES ON 1; Wouldn't work, because the way I set up the counter it would actually just populate all the odd number
+//2. Got the evenAndOddTurns to work in the dom, so that player number switches after click from 1 to 2 back to one, however no innerhtml is populating
+
+
+
+
