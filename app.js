@@ -10,58 +10,63 @@ var settingUpNames = function() {
 
 var currentPlayer = 1;
 
-var playerOneTiles = []
-var playerTwoTiles = []
+// var tileOneText = tileOne.innerHTML;
+// var tileTwoText = tileTwo.innerHTML;
+// var tileThreeText = tileThree.innerHTML;
+// var tileFourText = tileFour.innerHTML;
+// var tileFiveText = tileFive.innerHTML;
+// var tileSixText = tileSix.innerHTML;
+// var tileSevenText = tileSeven.innerHTML;
+// var tileEightText = tileEight.innerHTML;
+// var tileNineText = tileNine.innerHTML;
 
 var start = function () {
 	var currentPlayer = '1';
 
-	tileOne.innerHTML='';
+	tileOne.innerHTML = '';
 	tileOne.addEventListener('click', function(){
 		evenAndOddTurns(tileOne);
 		// console.log('Fn addingClickListener ran')
 		//Commented out ^^^ because it was causing an issue, will revisit later time willing
-	})	
-
-	tileTwo.innerHTML='';
+		});	
 	tileTwo.addEventListener('click', function(){
 		evenAndOddTurns(tileTwo);
-	})
-
+		});
+	
 	tileThree.innerHTML='';
 	tileThree.addEventListener('click', function(){
 		evenAndOddTurns(tileThree);
-	})
+	});
 
 	tileFour.innerHTML='';
 	tileFour.addEventListener('click', function(){
 		evenAndOddTurns(tileFour);
-	})
+	});
 
 	tileFive.innerHTML='';
 	tileFive.addEventListener('click', function(){
 		evenAndOddTurns(tileFive);
-	})
+	});
 
 	tileSix.innerHTML='';
 	tileSix.addEventListener('click', function(){
 		evenAndOddTurns(tileSix);
-	})
+	});
 
 	tileSeven.innerHTML='';
 	tileEight.addEventListener('click',function(){
 		evenAndOddTurns(tileSeven);
-	})
+	});
 
 	tileEight.innerHTML='';
 	tileEight.addEventListener('click',function(){
 		evenAndOddTurns(tileEight);
-	})
+	});
 
 	tileNine.innerHTML='';
 	tileNine.addEventListener('click', function(){
 		evenAndOddTurns(tileNine);
-	})
+	});
 
 	playerOneBox.innerHTML='';
 	playerTwoBox.innerHTML='';
@@ -72,20 +77,43 @@ var start = function () {
 	//now need to get var player1 and player2 and append child of the player console
 	}
 
+
 start();
 
 var evenAndOddTurns = function(tiles) {
 	if (currentPlayer == 1) {
-		tiles.innerHTML = 'x'; 
-		currentPlayer =2;
-		return 'booting out';
+			tiles.innerHTML = 'x'; 
+			currentPlayer = 2;
+			return 'booting out';
 	} else if (currentPlayer != 1) {
-		tiles.innerHTML = 'o';
-		//Citing help from Josie, who correctly noticed I had == 'o' when I needed ='o'
-		currentPlayer = 1;
-		return 'booting out';
-	}
+		   tiles.innerHTML = 'o';
+		   //Citing help from Josie, who correctly noticed I had == 'o' when I needed ='o'
+		   //APPENDTILETOPLAYERTWOTILES ARRAY
+		   currentPlayer = 1;
+		   return 'booting out';
+		} 
+	
+	// winnerWinner();
 }
+
+// var winnerWinner = function() {
+// 	if (tileOneText == tileTwoText && tileTwoText == tileThreeText && tileThreeText == 'x'){
+// 			console.log('x wins!!!')
+// 			return 'x wins!!!';
+// 		    }
+// };
+
+
+
+
+
+
+
+
+
+
+
+
 
 	//First crack at this: I bet it breaks
 	//BUT: KEY FEATURES I AM DRIVING AT HERE: 
