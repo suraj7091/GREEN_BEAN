@@ -13,50 +13,51 @@ var currentPlayer = 1;
 var start = function () {
 	var currentPlayer = '1';
 
-	tile1a.innerHTML='';
-	tile1a.addEventListener('click', function(){
-		evenAndOddTurns(tile1a);
-		console.log('Fn addingClickListener ran')
+	tileOne.innerHTML='';
+	tileOne.addEventListener('click', function(){
+		evenAndOddTurns(tileOne);
+		// console.log('Fn addingClickListener ran')
+		//Commented out ^^^ because it was causing an issue, will revisit later time willing
 	})	
 
-	tile1b.innerHTML='';
-	tile1b.addEventListener('click', function(){
-		evenAndOddTurns(tile1b);
+	tileTwo.innerHTML='';
+	tileTwo.addEventListener('click', function(){
+		evenAndOddTurns(tileTwo);
 	})
 
-	tile1c.innerHTML='';
-	tile1c.addEventListener('click', function(){
-		evenAndOddTurns(tile1c);
+	tileThree.innerHTML='';
+	tileThree.addEventListener('click', function(){
+		evenAndOddTurns(tileThree);
 	})
 
-	tile2a.innerHTML='';
-	tile2a.addEventListener('click', function(){
-		evenAndOddTurns(tile2a);
+	tileFour.innerHTML='';
+	tileFour.addEventListener('click', function(){
+		evenAndOddTurns(tileFour);
 	})
 
-	tile2b.innerHTML='';
-	tile2b.addEventListener('click', function(){
-		evenAndOddTurns(tile2b);
+	tileFive.innerHTML='';
+	tileFive.addEventListener('click', function(){
+		evenAndOddTurns(tileFive);
 	})
 
-	tile2c.innerHTML='';
-	tile2c.addEventListener('click', function(){
-		evenAndOddTurns(tile2c);
+	tileSix.innerHTML='';
+	tileSix.addEventListener('click', function(){
+		evenAndOddTurns(tileSix);
 	})
 
-	tile3a.innerHTML='';
-	tile3a.addEventListener('click',function(){
-		evenAndOddTurns(tile3a);
+	tileSeven.innerHTML='';
+	tileEight.addEventListener('click',function(){
+		evenAndOddTurns(tileEight);
 	})
 
-	tile3b.innerHTML='';
-	tile3b.addEventListener('click',function(){
-		evenAndOddTurns(tile3b);
+	tileEight.innerHTML='';
+	tileEight.addEventListener('click',function(){
+		evenAndOddTurns(tileEight);
 	})
 
-	tile3c.innerHTML='';
-	tile3c.addEventListener('click', function(){
-		evenAndOddTurns(tile3c);
+	tileNine.innerHTML='';
+	tileNine.addEventListener('click', function(){
+		evenAndOddTurns(tileNine);
 	})
 
 	playerOneBox.innerHTML='';
@@ -72,11 +73,11 @@ start();
 
 var evenAndOddTurns = function(tiles) {
 	if (currentPlayer == 1) {
-		tiles.innerHTML = 'X'; 
+		tiles.innerHTML = 'x'; 
 		currentPlayer =2;
 		return 'booting out';
 	} else if (currentPlayer != 1) {
-		tiles.innerHTML == 'O';
+		tiles.innerHTML = 'o';
 		currentPlayer = 1;
 		return 'booting out';
 	}
@@ -148,7 +149,5 @@ var evenAndOddTurns = function(tiles) {
     // }
     // NOTES ON 1; Wouldn't work, because the way I set up the counter it would actually just populate all the odd number
 //2. Got the evenAndOddTurns to work in the dom, so that player number switches after click from 1 to 2 back to one, however no innerhtml is populating
-
-
 
 
