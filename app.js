@@ -10,6 +10,9 @@ var settingUpNames = function() {
 
 var currentPlayer = 1;
 
+var playerOneTiles = []
+var playerTwoTiles = []
+
 var start = function () {
 	var currentPlayer = '1';
 
@@ -47,7 +50,7 @@ var start = function () {
 
 	tileSeven.innerHTML='';
 	tileEight.addEventListener('click',function(){
-		evenAndOddTurns(tileEight);
+		evenAndOddTurns(tileSeven);
 	})
 
 	tileEight.innerHTML='';
@@ -78,6 +81,7 @@ var evenAndOddTurns = function(tiles) {
 		return 'booting out';
 	} else if (currentPlayer != 1) {
 		tiles.innerHTML = 'o';
+		//Citing help from Josie, who correctly noticed I had == 'o' when I needed ='o'
 		currentPlayer = 1;
 		return 'booting out';
 	}

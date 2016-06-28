@@ -6,79 +6,74 @@ painting exercise done w06d05*/
 
 }*/
 .tile {
-	background-color:grey;
+	background-color:white;
+	font-size: 250px;
+	width:10%;
+	height:1em;
+	text-align: center;
 }
 
 #tileOne{
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileTwo {
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileThree {  
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileFour{
-	background-color:white;
-	height:15em;
-	width:30%;
+	/*height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileFive {
-	background-color:white;
-	height:15em;
-	width:30%;
+	/*height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 
 }
 
 #tileSix {
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileSeven {
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 
 }
 
 #tileEight {
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileNine {
-	background-color:white;
-	height:15em;
-	width:30%;
+/*	height:15em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
