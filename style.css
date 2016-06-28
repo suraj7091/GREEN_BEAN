@@ -1,0 +1,135 @@
+/*I pulled tile size and tweaked it from a homework assignment. 
+Wasn't more than two or three lines of code, but it was from the 
+painting exercise done w06d05*/
+
+/*#startButton{
+
+}*/
+.tile {
+	background-color:grey;
+}
+
+#tile1a {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+#tile1b {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+#tile1c {  
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+#tile2a {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+#tile2b {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+
+}
+
+#tile2c {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+#tile3a {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+
+}
+
+#tile3b {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+#tile3c {
+	background-color:white;
+	height:15em;
+	width:30%;
+	margin:3px;
+	display:inline-block;
+}
+
+
+#board {
+	background-color:black;
+	padding:10px;
+	width:50em
+	align:center;
+}
+
+.a{
+border:none;
+}
+
+.b{
+border:none;
+}
+
+.c{
+border:none;
+}
+
+
+#playerConsole {
+	float:left;
+	height:40%;
+	width:5em;
+	background-color:blue;
+}
+
+.playerOneBox{
+	font-family:serif;
+}
+
+.playerTwoBox {
+	font-family:serif;
+}
+
+#infoSection {
+	float:right;
+	height:40%;
+	width:5em;
+}
+
+
+#navOptional {
+
+}*/
+
+/*.container {
+	display:inline;
+}*/
