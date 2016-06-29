@@ -1,0 +1,12 @@
+establishing a win state
+
+onclick // append an array (tile1a, tile1b, tile1c)
+
+tileOne    tileTwo    tileThree
+tileFour   tileFive   tileSix
+tileSeven  tileEight  tileNine
+
+In evenAndOdd function, I want to add something onclick that lets me retrieve them ...
+Push there somewhere to be stored
+At the end of each even and odd turn, I want the place they are stored to check for combinations
+If they get the right combination it would be a win state
