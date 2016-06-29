@@ -129,10 +129,7 @@ var winnerWinnerO = function(tiles) {
 		alert(player2 + ' wins it!');
 		start();
 		return 'booted out';
-	} else if (tileOne.innerHTML != '' && tileTwo.innerHTML != '' && tileThree.innerHTML != '' && tileFour.innerHTML != '' && tileFive.innerHTML != '' && tileSix.innerHTML != '' && tileSeven.innerHTML != '' && tileEight.innerHTML != '' && tileNine.innerHTML != ''); {  //actually should say if all the tiles have innerHTML then it invokes the start function
-		alert('Sorry, but ' + player1 + 'and ' + player2 'have tied! Lets restart the game.')
-		return 'getting out of this joint';
-	else {
+	} else {
 		return 'getting out of this joint';
 	}
 }
@@ -170,9 +167,6 @@ var winnerWinnerX = function(tiles) {
 		alert(player1 + ' wins it!');
 		start();
 		return 'booted out';
-	} else if (tileOne.innerHTML != '' && tileTwo.innerHTML != '' && tileThree.innerHTML != '' && tileFour.innerHTML != '' && tileFive.innerHTML != '' && tileSix.innerHTML != '' && tileSeven.innerHTML != '' && tileEight.innerHTML != '' && tileNine.innerHTML != ''); {  //actually should say if all the tiles have innerHTML then it invokes the start function
-		alert('Sorry, but ' + player1 + 'and ' + player2 'have tied! Lets restart the game.')
-		return 'getting out of this joint';
 	} else {
         return 'getting out of this joint';
 	}
