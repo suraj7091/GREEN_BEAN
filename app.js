@@ -90,15 +90,90 @@ var evenAndOddTurns = function(tiles) {
 	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
 		alert("Sorry, that was already clicked");
 		}
+	winnerWinnerX();
 	winnerWinnerO();
 }
 
 var currentPlayer = '1';
 
 var winnerWinnerO = function(tiles) {
-	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == 'o') {
-		alert('Player two wins it!');
+	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == tileThree.innerHTML && tileTwo.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
 		return 'booted out';
+	} else if (tileFour.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSix.innerHTML && tileFive.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileSeven.innerHTML == tileEight.innerHTML && tileEight.innerHTML == tileNine.innerHTML && tileEight.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileTwo.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileEight.innerHTML && tileEight.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML != '' && tileTwo.innerHTML != '' && tileThree.innerHTML != '' && tileFour.innerHTML != '' && tileFive.innerHTML != '' && tileSix.innerHTML != '' && tileSeven.innerHTML != '' && tileEight.innerHTML != '' && tileNine.innerHTML != ''); {  //actually should say if all the tiles have innerHTML then it invokes the start function
+		alert('Sorry, but ' + player1 + 'and ' + player2 'have tied! Lets restart the game.')
+		return 'getting out of this joint';
+	else {
+		return 'getting out of this joint';
 	}
 }
 
+var winnerWinnerX = function(tiles) {
+	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == tileThree.innerHTML && tileTwo.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileFour.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSix.innerHTML && tileFive.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileSeven.innerHTML == tileEight.innerHTML && tileEight.innerHTML == tileNine.innerHTML && tileEight.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileTwo.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileEight.innerHTML && tileEight.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		return 'booted out';
+		start();
+	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML != '' && tileTwo.innerHTML != '' && tileThree.innerHTML != '' && tileFour.innerHTML != '' && tileFive.innerHTML != '' && tileSix.innerHTML != '' && tileSeven.innerHTML != '' && tileEight.innerHTML != '' && tileNine.innerHTML != ''); {  //actually should say if all the tiles have innerHTML then it invokes the start function
+		alert('Sorry, but ' + player1 + 'and ' + player2 'have tied! Lets restart the game.')
+		return 'getting out of this joint';
+	} else {
+        return 'getting out of this joint';
+	}
+}
