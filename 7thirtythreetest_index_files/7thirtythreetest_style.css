@@ -1,84 +1,82 @@
-//*I pulled tile size and tweaked it from a homework assignment. 
-Wasn't more than two or three lines of code, but it was from the 
-painting exercise done w06d05*/
 
-/*#startButton{
-
-}*//*I pulled tile size and tweaked it from a homework assignment. 
-Wasn't more than two or three lines of code, but it was from the 
-painting exercise done w06d05*/
-
-/*#startButton{
-}*/
 .tile {
 	background-image:url('http://i.imgur.com/GhaOXOs.png');
-	font-size: 250px;
-	width:25%;
-	height:5em;
+	font-size: 100px;
+	width:30%;
+	height:100px;
 	text-align: center;
 }
 
+#board {
+	background-color:black;
+	align:center;
+	width:95%;
+	height:1200px;
+	padding:10px;
+	margins:5px;
+}
+
 #tileOne{
-	height:15em;
-	width:30%;
+/*	height:30%;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileTwo {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileThree {  
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileFour{
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileFive {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 
 }
 
 #tileSix {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileSeven {
-	height:15em;
-	width:30%;
+/*	height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 
 }
 
 #tileEight {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
 
 #tileNine {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
 	display:inline-block;
 }
@@ -86,10 +84,9 @@ painting exercise done w06d05*/
 
 #board {
 	background-color:black;
-	padding:10px;
-	height:50%%;
-	width:50em;
 	align:center;
+	width:60%;
+	height:500px;
 }
 
 #playerConsole {
@@ -112,4 +109,3 @@ painting exercise done w06d05*/
 	height:40%;
 	width:5em;
 }
-

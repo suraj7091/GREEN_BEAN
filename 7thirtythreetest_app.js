@@ -157,11 +157,11 @@ var winnerWinnerX = function(tiles) {
 		return 'booted out';
 	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x'){
 		alert(player1 + ' wins it!');
+		start();
 		return 'booted out';
 		start();
 	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x') {
 		alert(player1 + ' wins it!');
-		start();
 		return 'booted out';
 	} else if (tileThree.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
 		alert(player1 + ' wins it!');

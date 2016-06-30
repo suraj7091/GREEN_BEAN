@@ -1,0 +1,120 @@
+ html { 
+  background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.tile {
+	/*background-image:url('http://i.imgur.com/KyUklZp.png');*/
+	background-color:white;
+	border-color:black;
+	font-size: 150px;
+	width:30%;
+	height:120px;
+	text-align: center;
+	vertical-align:text-top;
+	align:center;
+	float:left;
+	/*border:single;
+	border-color:pink;
+	border-width:3px;*/
+	/*Not sure why, but having issues getting border to show up */
+	padding:1px;
+}
+
+#board {
+	background-color:black;
+	align:center;
+	width:40%;
+	height:400px;
+	padding:35px;
+	top-margin:100px;
+	right-margin:10px;
+}
+
+#tileOne{
+/*	height:30%;
+	width:30%;*/
+	margin:3px;
+	
+}
+
+#tileTwo {
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+}
+
+#tileThree {  
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+}
+
+#tileFour{
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+}
+
+#tileFive {
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+
+}
+
+#tileSix {
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+}
+
+#tileSeven {
+/*	height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+
+}
+
+#tileEight {
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+}
+
+#tileNine {
+	/*height:5em;
+	width:30%;*/
+	margin:3px;
+	 
+}
+
+#playerConsole {
+	float:left;
+	height:40%;
+	width:5em;
+	background-color:white;
+}
+
+.playerOneBox{
+	font-family:serif;
+}
+
+.playerTwoBox {
+	font-family:serif;
+}
+
+#infoSection {
+	float:right;
+	height:40%;
+	width:5em;
+}
