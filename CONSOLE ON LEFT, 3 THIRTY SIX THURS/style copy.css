@@ -1,4 +1,4 @@
- html { 
+html { 
   background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,16 +7,16 @@
 }
 
 .tile {
-	/*background-image:url('http://i.imgur.com/KyUklZp.png');*/
-	background-color:white;
+	background-image:url('http://i.imgur.com/nCc1HOm.png');
 	border-color:black;
-	font-size: 150px;
+	font-size: 100px;
 	width:30%;
 	height:120px;
 	text-align: center;
 	vertical-align:text-top;
 	align:center;
 	float:left;
+	color:black;
 	/*border:single;
 	border-color:pink;
 	border-width:3px;*/
@@ -118,3 +118,5 @@
 	height:40%;
 	width:5em;
 }
+
+

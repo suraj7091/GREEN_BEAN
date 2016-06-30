@@ -88,7 +88,7 @@ var evenAndOddTurns = function(tiles) {
                  // return 'booting out';
 		} 
 	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
-		alert("Sorry, that was already clicked");
+		return "Sorry, that was already clicked";
 		}
 	winnerWinnerX();
 	winnerWinnerO();
@@ -157,8 +157,9 @@ var winnerWinnerX = function(tiles) {
 		return 'booted out';
 	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x'){
 		alert(player1 + ' wins it!');
-		return 'booted out';
 		start();
+		return 'booted out';
+		
 	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x') {
 		alert(player1 + ' wins it!');
 		start();
