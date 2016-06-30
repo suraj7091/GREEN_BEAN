@@ -88,131 +88,87 @@ var evenAndOddTurns = function(tiles) {
                  // return 'booting out';
 		} 
 	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
-		alert("Sorry, that was already clicked");
+		return "Sorry, that was already clicked";
 		}
-    // winnerWinner0();
+	winnerWinnerX();
+	winnerWinnerO();
 }
 
 var currentPlayer = '1';
-	var tileOneText = tileOne.innerHTML;
-	var tileTwoText = tileTwo.innerHTML;
-	var tileThreeText = tileThree.innerHTML;
-	var tileFourText = tileFour.innerHTML;
-	var tileFiveText = tileFive.innerHTML;
-	var tileSixText = tileSix.innerHTML;
-	var tileSevenText = tileSeven.innerHTML;
-	var tileEightText = tileEight.innerHTML;
-	var tileNineText = tileNine.innerHTML;
 
-//     tileOne      tileTwo     tileThree
-//     tileFour     tileFive    tileSix
-//     tileSeven    tileEight   tileNine
+var winnerWinnerO = function(tiles) {
+	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == tileThree.innerHTML && tileTwo.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileFour.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSix.innerHTML && tileFive.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileSeven.innerHTML == tileEight.innerHTML && tileEight.innerHTML == tileNine.innerHTML && tileEight.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileTwo.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileEight.innerHTML && tileEight.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'o') {
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'o'){
+		alert(player2 + ' wins it!');
+		start();
+		return 'booted out';
+	} else {
+		return 'getting out of this joint';
+	}
+}
 
-// var winnerWinnerX = function() {
-// if // tileOne = x 
-
-// 	// two & three
-//     // five & nine
-//     // four & seven
-
-// else if //tileTwo = x 
-
-// 	// file five & eight
-//     // one & 3
-
-// else if // tileThree = x
-
-// 	//six & nine
-//     //two & one
-//     //five & seven
-
-// else if // tileFour = x
-
-// 	//one & seven
-//     // five & six
-
-// else if // tileFive = x
-
-// 	//one & nine
-//     // three & seven 
-//     // four & six
-
-// else if // tileSix = x
-
-// 	// three & nine
-//     // four & six
-
-// else if // tileSeven = x
-
-// 	// four & one
-//     // five & three
-//     // eight & nine
-
-// else if // tileEight = x
-
-// 	// seven & nine
-//     // five & two
-
-// else if // tileNine = x
-
-// 	// six & three
-//     // eight & nine
-//     // five & one
-
-// var winnerWinnerO = function(tiles) {
-// if (tileOne.innerHTML = 'o') {
-//      if (tileTwo.innerHTML && tileThree.innerHTML) == 'o' {
-//      	alert('Player 2 wins it!');
-//      	return('WIN!');
-//      } else if (tileFour.innerHTML && tileSeven.innerHTML) == 'o' {
-//      	alert('Player 2 wins it!');
-//      	return('WIN!');
-//      }
-//    }
-// }
-// else if //tileTwo = x 
-
-// 	// file five & eight
-//     // one & 3
-
-// else if // tileThree = x
-
-// 	//six & nine
-//     //two & one
-//     //five & seven
-
-// else if // tileFour = x
-
-// 	//one & seven
-//     // five & six
-
-// else if // tileFive = x
-
-// 	//one & nine
-//     // three & seven 
-//     // four & six
-
-// else if // tileSix = x
-
-// 	// three & nine
-//     // four & six
-
-// else if // tileSeven = x
-
-// 	// four & one
-//     // five & three
-//     // eight & nine
-
-// else if // tileEight = x
-
-// 	// seven & nine
-//     // five & two
-
-// else if // tileNine = x
-
-// 	// six & three
-//     // eight & nine
-//     // five & one
-//     // three & one
-
-// }
+var winnerWinnerX = function(tiles) {
+	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == tileThree.innerHTML && tileTwo.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileFour.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSix.innerHTML && tileFive.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileSeven.innerHTML == tileEight.innerHTML && tileEight.innerHTML == tileNine.innerHTML && tileEight.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileTwo.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileEight.innerHTML && tileEight.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+		
+	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else {
+        return 'getting out of this joint';
+	}
+}
