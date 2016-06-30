@@ -172,13 +172,13 @@ var winnerWinnerX = function(tiles) {
 	}
 }
 
-var tiesExOh = function() {
-	document.querySelectorAll('tile');
-	if (this.innerHTML == 'x' || this.innerHTML == 'o') {
-		alert('Sorry, tie game! Better luck next time');
-		start();
-		return 'punks tied, can you believe it?'
-	} else {
-		return 'booting out';
-	}
-}
+// var tiesExOh = function() {
+// 	document.querySelectorAll('tile');
+// 	if (this.innerHTML == 'x' || this.innerHTML == 'o') {
+// 		alert('Sorry, tie game! Better luck next time');
+// 		start();
+// 		return 'punks tied, can you believe it?'
+// 	} else {
+// 		return 'booting out';
+// 	}
+// }

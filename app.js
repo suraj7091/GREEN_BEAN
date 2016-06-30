@@ -1,4 +1,3 @@
-
 var player1 = prompt('What is your name?', 'type name'); //got working & saved to variable
 var player2 = prompt('Hey, how bout you?', 'type name'); //got working & saved to variable
 
@@ -8,7 +7,7 @@ var settingUpNames = function() {
 	//Tested & works: Also not the ideal way to do this, I wanted again to get element by id and append child, but couldn't figure it out. I'm rolling with this and will return to it time permitting
 }
 
-var currentPlayer = 1;
+var currentPlayer = 2;
 
 var start = function () {
 
@@ -75,7 +74,7 @@ var evenAndOddTurns = function(tiles) {
 	
 	if (tiles.innerHTML == '') {	//TRACKING: IF FOR HAS NO TEXT, IE CLICKABLE
 		
-		if (currentPlayer == 1) {
+		if (currentPlayer == 1) { //I think this is where my bug is creating phantom x's
 			console.log(tiles.innerHTML);
 			tiles.innerHTML = 'x'; 
 			currentPlayer = 2;
@@ -88,10 +87,11 @@ var evenAndOddTurns = function(tiles) {
                  // return 'booting out';
 		} 
 	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
-		alert("Sorry, that was already clicked");
+		return 'sorry, already clicked';
 		}
 	winnerWinnerX();
 	winnerWinnerO();
+	tiesExOh();
 }
 
 var currentPlayer = '1';
@@ -147,7 +147,7 @@ var winnerWinnerX = function(tiles) {
 		alert(player1 + ' wins it!');
 		start();
 		return 'booted out';
-	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileFour.innerHTML == 'x'){
 		alert(player1 + ' wins it!');
 		start();
 		return 'booted out';
@@ -171,3 +171,14 @@ var winnerWinnerX = function(tiles) {
         return 'getting out of this joint';
 	}
 }
+
+// var tiesExOh = function() {
+// 	document.querySelectorAll('tile');
+// 	if (this.innerHTML == 'x' || this.innerHTML == 'o') {
+// 		alert('Sorry, tie game! Better luck next time');
+// 		start();
+// 		return 'punks tied, can you believe it?'
+// 	} else {
+// 		return 'booting out';
+// 	}
+// }

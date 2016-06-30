@@ -1,102 +1,108 @@
-//*I pulled tile size and tweaked it from a homework assignment. 
-Wasn't more than two or three lines of code, but it was from the 
-painting exercise done w06d05*/
+html { 
+  background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-/*#startButton{
-
-}*//*I pulled tile size and tweaked it from a homework assignment. 
-Wasn't more than two or three lines of code, but it was from the 
-painting exercise done w06d05*/
-
-/*#startButton{
-}*/
 .tile {
-	background-image:url('http://i.imgur.com/GhaOXOs.png');
-	font-size: 250px;
-	width:25%;
-	height:5em;
+	background-image:url('http://i.imgur.com/nCc1HOm.png');
+	border-color:black;
+	font-size: 100px;
+	width:30%;
+	height:120px;
 	text-align: center;
+	vertical-align:text-top;
+	align:center;
+	float:left;
+	color:black;
+	/*border:single;
+	border-color:pink;
+	border-width:3px;*/
+	/*Not sure why, but having issues getting border to show up */
+	padding:1px;
+}
+
+#board {
+	background-color:black;
+	align:center;
+	width:40%;
+	height:400px;
+	padding:35px;
+	top-margin:100px;
+	right-margin:10px;
 }
 
 #tileOne{
-	height:15em;
-	width:30%;
+/*	height:30%;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	
 }
 
 #tileTwo {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	 
 }
 
 #tileThree {  
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	 
 }
 
 #tileFour{
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	 
 }
 
 #tileFive {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
 
 }
 
 #tileSix {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	 
 }
 
 #tileSeven {
-	height:15em;
-	width:30%;
+/*	height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	 
 
 }
 
 #tileEight {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
+	 
 }
 
 #tileNine {
-	height:15em;
-	width:30%;
+	/*height:5em;
+	width:30%;*/
 	margin:3px;
-	display:inline-block;
-}
-
-
-#board {
-	background-color:black;
-	padding:10px;
-	height:50%%;
-	width:50em;
-	align:center;
+	 
 }
 
 #playerConsole {
 	float:left;
 	height:40%;
 	width:5em;
-	background-color:blue;
+	background-color:white;
 }
 
 .playerOneBox{
@@ -112,4 +118,3 @@ painting exercise done w06d05*/
 	height:40%;
 	width:5em;
 }
-
