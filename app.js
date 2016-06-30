@@ -87,11 +87,18 @@ var evenAndOddTurns = function(tiles) {
                  // return 'booting out';
 		} 
 	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
+<<<<<<< HEAD
 		return 'sorry, already clicked';
 		}
 	winnerWinnerX();
 	winnerWinnerO();
 	tiesExOh();
+=======
+		return "Sorry, that was already clicked";
+		}
+	winnerWinnerX();
+	winnerWinnerO();
+>>>>>>> master
 }
 
 var currentPlayer = '1';
@@ -133,6 +140,7 @@ var winnerWinnerO = function(tiles) {
 		return 'getting out of this joint';
 	}
 }
+<<<<<<< HEAD
 
 var winnerWinnerX = function(tiles) {
 	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == tileThree.innerHTML && tileTwo.innerHTML == 'x') {
@@ -182,3 +190,44 @@ var winnerWinnerX = function(tiles) {
 // 		return 'booting out';
 // 	}
 // }
+=======
+
+var winnerWinnerX = function(tiles) {
+	if 	(tileOne.innerHTML == tileTwo.innerHTML && tileTwo.innerHTML == tileThree.innerHTML && tileTwo.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileFour.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSix.innerHTML && tileFive.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileSeven.innerHTML == tileEight.innerHTML && tileEight.innerHTML == tileNine.innerHTML && tileEight.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileTwo.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileEight.innerHTML && tileEight.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+		
+	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x') {
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else if (tileThree.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
+		alert(player1 + ' wins it!');
+		start();
+		return 'booted out';
+	} else {
+        return 'getting out of this joint';
+	}
+}
+>>>>>>> master

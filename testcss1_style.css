@@ -7,16 +7,26 @@ html {
 }
 
 .tile {
+<<<<<<< HEAD
 	background-image:url('http://i.imgur.com/nCc1HOm.png');
 	border-color:black;
 	font-size: 100px;
+=======
+	/*background-image:url('http://i.imgur.com/KyUklZp.png');*/
+	background-color:white;
+	border-color:black;
+	font-size: 150px;
+>>>>>>> master
 	width:30%;
 	height:120px;
 	text-align: center;
 	vertical-align:text-top;
 	align:center;
 	float:left;
+<<<<<<< HEAD
 	color:black;
+=======
+>>>>>>> master
 	/*border:single;
 	border-color:pink;
 	border-width:3px;*/

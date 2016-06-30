@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 var player1 = prompt('What is your name?', 'type name'); //got working & saved to variable
 var player2 = prompt('Hey, how bout you?', 'type name'); //got working & saved to variable
 
@@ -11,11 +8,7 @@ var settingUpNames = function() {
 	//Tested & works: Also not the ideal way to do this, I wanted again to get element by id and append child, but couldn't figure it out. I'm rolling with this and will return to it time permitting
 }
 
-<<<<<<< HEAD
-var currentPlayer = 2;
-=======
 var currentPlayer = 1;
->>>>>>> master
 
 var start = function () {
 
@@ -82,11 +75,7 @@ var evenAndOddTurns = function(tiles) {
 	
 	if (tiles.innerHTML == '') {	//TRACKING: IF FOR HAS NO TEXT, IE CLICKABLE
 		
-<<<<<<< HEAD
-		if (currentPlayer == 1) { //I think this is where my bug is creating phantom x's
-=======
 		if (currentPlayer == 1) {
->>>>>>> master
 			console.log(tiles.innerHTML);
 			tiles.innerHTML = 'x'; 
 			currentPlayer = 2;
@@ -99,18 +88,10 @@ var evenAndOddTurns = function(tiles) {
                  // return 'booting out';
 		} 
 	} else if (tiles.innerHTML != '') {   //TRACKING: IF FOR HAS TEXT AND IS NOT CLICKABLE
-<<<<<<< HEAD
-		return 'sorry, already clicked';
+		return "Sorry, that was already clicked";
 		}
 	winnerWinnerX();
 	winnerWinnerO();
-	tiesExOh();
-=======
-		alert("Sorry, that was already clicked");
-		}
-	winnerWinnerX();
-	winnerWinnerO();
->>>>>>> master
 }
 
 var currentPlayer = '1';
@@ -166,11 +147,7 @@ var winnerWinnerX = function(tiles) {
 		alert(player1 + ' wins it!');
 		start();
 		return 'booted out';
-<<<<<<< HEAD
-	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileFour.innerHTML == 'x'){
-=======
 	} else if (tileOne.innerHTML == tileFour.innerHTML && tileFour.innerHTML == tileSeven.innerHTML && tileSeven.innerHTML == 'x'){
->>>>>>> master
 		alert(player1 + ' wins it!');
 		start();
 		return 'booted out';
@@ -180,8 +157,9 @@ var winnerWinnerX = function(tiles) {
 		return 'booted out';
 	} else if (tileThree.innerHTML == tileSix.innerHTML && tileSix.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x'){
 		alert(player1 + ' wins it!');
-		return 'booted out';
 		start();
+		return 'booted out';
+		
 	} else if (tileOne.innerHTML == tileFive.innerHTML && tileFive.innerHTML == tileNine.innerHTML && tileNine.innerHTML == 'x') {
 		alert(player1 + ' wins it!');
 		start();
@@ -193,19 +171,4 @@ var winnerWinnerX = function(tiles) {
 	} else {
         return 'getting out of this joint';
 	}
-<<<<<<< HEAD
 }
-
-// var tiesExOh = function() {
-// 	document.querySelectorAll('tile');
-// 	if (this.innerHTML == 'x' || this.innerHTML == 'o') {
-// 		alert('Sorry, tie game! Better luck next time');
-// 		start();
-// 		return 'punks tied, can you believe it?'
-// 	} else {
-// 		return 'booting out';
-// 	}
-// }
-=======
-}
->>>>>>> master
