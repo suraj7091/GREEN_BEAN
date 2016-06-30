@@ -1,110 +1,99 @@
-/*I pulled tile size and tweaked it from a homework assignment. 
-Wasn't more than two or three lines of code, but it was from the 
-painting exercise done w06d05*/
+html { 
+  background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-/*#startButton{
-
-}*/
 .tile {
-	background-image:url("http://i.imgur.com/GhaOXOs.png");
-	font-size: 250px;
-	width:15%;
-	height:1em;
+	background-image:url('http://i.imgur.com/nCc1HOm.png');
+	border-color:black;
+	font-size: 100px;
+	width:30%;
+	height:162px;
 	text-align: center;
-	overflow:hidden;
-}
-
-#tileOne{
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
-#tileTwo {
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
-#tileThree {  
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
-#tileFour{
-	/*height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
-#tileFive {
-	/*height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
+	vertical-align:text-top;
+	align:center;
+	float:left;
+	color:black;
+	/*border:single;
+	border-color:pink;
+	border-width:3px;*/
+	/*Not sure why, but having issues getting border to show up */
+	padding-top:2px
+	padding-bottom:2px;
+	padding-left:11px;
+	margin:2px;
 
 }
-
-#tileSix {
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
-#tileSeven {
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-
-}
-
-#tileEight {
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
-#tileNine {
-/*	height:15em;
-	width:30%;*/
-	margin:3px;
-	display:inline-block;
-}
-
 
 #board {
 	background-color:black;
-	padding:10px;
-	width:50em
 	align:center;
+	width:40%;
+	height:493px;
+	padding:35px;
+	top-margin:100px;
+	right-margin:10px;
 }
 
-.a{
-border:none;
+section {
+	float:right;
+	color:pink;
+	text-align:bottom;
+	background-color:white;
+
 }
 
-.b{
-border:none;
+#tileOne{
+/*	height:30%;
+	width:30%;*/
+	margin:3px;
 }
 
-.c{
-border:none;
+#tileTwo {
+	margin:3px;
 }
 
+#tileThree {  
+	margin:3px;	 
+}
+
+#tileFour{
+	margin:3px;
+	 
+}
+
+#tileFive {
+	margin:3px;
+}
+
+#tileSix {
+	margin:3px;	 
+}
+
+#tileSeven {
+	margin:3px;
+}
+
+#tileEight {
+	margin:3px;	 
+}
+
+#tileNine {
+	margin:3px;	 
+}
 
 #playerConsole {
 	float:left;
-	height:40%;
-	width:5em;
-	background-color:blue;
+	height:200px;
+	width:20%;
+	background-color:white;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	font-size:40px;
+	color:white;
 }
 
 .playerOneBox{
@@ -122,6 +111,3 @@ border:none;
 }
 
 
-/*#navOptional {
-
-}*/
