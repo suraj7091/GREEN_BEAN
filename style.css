@@ -1,23 +1,11 @@
-<<<<<<< HEAD
+
 html {
   background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed;
-=======
-html { 
-  background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed; 
->>>>>>> 9460add574c86b1dab84c8dc6107aa86dbd49578
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-<<<<<<< HEAD
-header{
-  background-color:black;
-}
-
-footer{
-  background-color:black;
 }
 
 body{
@@ -107,8 +95,8 @@ canvas{
 	50%  {-webkit-transform: scale(3,4);}
 	75%  {-webkit-transform: scale(4,5);}
 	100%  { -webkit-transform: scale(0,0);}
+}
 
-=======
 .tile {
 	background-image:url('http://i.imgur.com/nCc1HOm.png');
 	border-color:black;
@@ -159,13 +147,13 @@ section {
 	margin:3px;
 }
 
-#tileThree {  
-	margin:3px;	 
+#tileThree {
+	margin:3px;
 }
 
 #tileFour{
 	margin:3px;
-	 
+
 }
 
 #tileFive {
@@ -173,7 +161,7 @@ section {
 }
 
 #tileSix {
-	margin:3px;	 
+	margin:3px;
 }
 
 #tileSeven {
@@ -181,11 +169,11 @@ section {
 }
 
 #tileEight {
-	margin:3px;	 
+	margin:3px;
 }
 
 #tileNine {
-	margin:3px;	 
+	margin:3px;
 >>>>>>> 9460add574c86b1dab84c8dc6107aa86dbd49578
 }
 @-webkit-keyframes h3Animation{
@@ -209,18 +197,7 @@ canvas#canvas2{
 
 canvas#canvas3{
    background:#ff8080;
-=======
-#playerConsole {
-	float:left;
-	height:200px;
-	width:20%;
-	background-color:white;
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-family: 'Roboto', sans-serif;
-	font-size:40px;
-	color:white;
->>>>>>> 9460add574c86b1dab84c8dc6107aa86dbd49578
-}
+ }
 
 canvas#canvas4{
    background:#ff8080;
@@ -238,7 +215,7 @@ canvas#canvas7{
    background:#ff8080;
 }
 
-<<<<<<< HEAD
+
 canvas#canvas8{
    background:#ff8080;
 }
@@ -246,5 +223,3 @@ canvas#canvas8{
 canvas#canvas9{
    background:#ff8080;
 }
-=======
->>>>>>> 9460add574c86b1dab84c8dc6107aa86dbd49578
