@@ -37,7 +37,6 @@ div#box{
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   align-items:center;
   align-content:center;
-
 }
 
 h3{
@@ -97,129 +96,66 @@ canvas{
 	100%  { -webkit-transform: scale(0,0);}
 }
 
-.tile {
-	background-image:url('http://i.imgur.com/nCc1HOm.png');
-	border-color:black;
-	font-size: 100px;
-	width:30%;
-	height:162px;
-	text-align: center;
-	vertical-align:text-top;
-	align:center;
-	float:left;
-	color:black;
-	/*border:single;
-	border-color:pink;
-	border-width:3px;*/
-	/*Not sure why, but having issues getting border to show up */
-	padding-top:2px
-	padding-bottom:2px;
-	padding-left:11px;
-	margin:2px;
-
-}
-
-#board {
-	background-color:black;
-	align:center;
-	width:40%;
-	height:493px;
-	padding:35px;
-	top-margin:100px;
-	right-margin:10px;
-}
-
-section {
-	float:right;
-	color:pink;
-	text-align:bottom;
-	background-color:white;
-
-}
-
-#tileOne{
-/*	height:30%;
-	width:30%;*/
-	margin:3px;
-}
-
-#tileTwo {
-	margin:3px;
-}
-
-#tileThree {
-	margin:3px;
-}
-
-#tileFour{
-	margin:3px;
-
-}
-
-#tileFive {
-	margin:3px;
-}
-
-#tileSix {
-	margin:3px;
-}
-
-#tileSeven {
-	margin:3px;
-}
-
-#tileEight {
-	margin:3px;
-}
-
-#tileNine {
-	margin:3px;
->>>>>>> 9460add574c86b1dab84c8dc6107aa86dbd49578
-}
 @-webkit-keyframes h3Animation{
 
 	0%   {-webkit-transform: scale(0,0);}
 	50% {-webkit-transform: scale(0,0);}
 	100%  {-webkit-transform: scale(100,100);}
 
-<<<<<<< HEAD
 }
 
 canvas#canvas1{
  background:#ff8080;
- 2px 2px 5px white;
+ height:7%;
+ width:7%;
 
 }
 
 canvas#canvas2{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
 
 canvas#canvas3{
    background:#ff8080;
+   height:7%;
+   width:7%;
  }
 
 canvas#canvas4{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
 
 canvas#canvas5{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
 
 canvas#canvas6{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
 
 canvas#canvas7{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
 
 
 canvas#canvas8{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
 
 canvas#canvas9{
    background:#ff8080;
+   height:7%;
+   width:7%;
 }
