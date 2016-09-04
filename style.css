@@ -22,58 +22,8 @@ body{
   border-radius:1%;
 }
 
-div#box{
-	text-align:center;
-	/*width:auto;
-	height:auto;*/
-  font-size:3em;
-  padding:2%;
-  font-weight:bold;
-}
-
-.canvas{
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  align-items:center;
-  align-content:center;
-
-}
-
-h3{
-
-	position:relative;
-	-webkit-animation:h3Animation 5s;
-  font-family: font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-weight:lighter;
-  background-color:white;
-
-}
-
-h1{
-
-	position:relative;
-	-webkit-animation:h1Animation 5s;
-
-}
-
-h2{
-
-	position:relative;
-	-webkit-animation:h2Animation 5s;
-
-}
-
-canvas{
-
-	position:relative;
-	-webkit-animation:canvasAnimation 5s;
-  padding:2.25%;
-  border-radius:5%;
-}
-
 @-webkit-keyframes canvasAnimation {
-
 	0%   {-webkit-transform:rotate(90deg);left:0px; top:0px;}
-
 }
 
 @-webkit-keyframes h1Animation {
@@ -95,29 +45,6 @@ canvas{
 	100%  { -webkit-transform: scale(0,0);}
 }
 
-.tile {
-	background-image:url('http://i.imgur.com/nCc1HOm.png');
-	border-color:black;
-	font-size: 100px;
-	width:30%;
-	height:162px;
-	text-align: center;
-	vertical-align:text-top;
-	align:center;
-	float:left;
-	color:black;
-	/*border:single;
-	border-color:pink;
-	border-width:3px;*/
-	/*Not sure why, but having issues getting border to show up */
-	padding-top:2px
-	padding-bottom:2px;
-	padding-left:11px;
-	margin:2px;
-
-
-}
-
 div#box{
 	text-align:center;
 	/*width:auto;
@@ -127,12 +54,6 @@ div#box{
   font-weight:bold;
 }
 
-.canvas{
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  align-items:center;
-  align-content:center;
-
-}
 
 h3{
 
@@ -161,6 +82,7 @@ canvas{
 	position:relative;
 	-webkit-animation:canvasAnimation 5s;
   padding:2.25%;
+  background-color:black;
   border-radius:5%;
   @-webkit-keyframes canvasAnimation {
 
