@@ -3,7 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-		<script type="text/javascript" href="main.js">
+		<script type="text/javascript">
 
 		//Global Variables
 		var painted;
@@ -46,18 +46,14 @@
 					cxt.stroke();
 					cxt.closePath();
 					content[canvasNumber-1] = 'X';
-
-
-
-        }
-        }
+				}
 
 				else{
 					cxt.beginPath();
 					cxt.arc(25,25,20,0,Math.PI*2,true);
 					cxt.stroke();
 					cxt.closePath();
-					(content[canvasNumber-1] = 'O');
+					content[canvasNumber-1] = 'O';
 				}
 
 				turn++;
@@ -66,13 +62,13 @@
 				checkForWinners(content[canvasNumber-1]);
 
 				if(squaresFilled==9){
-					alert("Good game,guys!");
+					alert("Game over, well played!");
 					location.reload(true);
 				}
 
 			}
 			else{
-				alert("Sorry, someone got to that square already.");
+				alert("Whoops, someone beat you to it already.");
 			}
 
 		}
@@ -81,7 +77,7 @@
 
 			for(var a = 0; a < winningCombinations.length; a++){
 			if(content[winningCombinations[a][0]]==symbol&&content[winningCombinations[a][1]]==	symbol&&content[winningCombinations[a][2]]==symbol){
-				alert(symbol+ " You won!");
+				alert(symbol+ " has won the game!");
 				playAgain();
 			}
 			}
@@ -89,13 +85,13 @@
 		}
 
 		function playAgain(){
-			y=confirm("Do you want to play again?");
+			y=confirm("Would you like to play again?");
 			if(y==true){
-				alert("Okay!");
+				alert("Alright then!");
 				location.reload(true);
 			}
 			else{
-				alert("See ya' around.");
+				alert("See ya' then.");
 		}
 
 		}
