@@ -16,7 +16,7 @@ body{
   margin-bottom:7%;
   margin-left:9%;
   margin-right:9%;
-  /*font-size:100px;*/
+  font-family: 'Prompt', sans-serif;
   background-color:white;
   opacity:0.8;
   border-radius:1%;
