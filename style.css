@@ -1,7 +1,7 @@
 
 html {
   background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed;
-
+  font-family: 'Prompt', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,7 +11,6 @@ html {
 body{
   align-self:center;
 	text-align:center;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight:lighter;
   margin-top:7%;
   margin-bottom:7%;
@@ -37,13 +36,13 @@ div#box{
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   align-items:center;
   align-content:center;
+
 }
 
 h3{
 
 	position:relative;
 	-webkit-animation:h3Animation 5s;
-  font-family: font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight:lighter;
   background-color:white;
 
@@ -57,14 +56,13 @@ h1{
 }
 
 h2{
-
+  font-family: 'Prompt', sans-serif;
 	position:relative;
 	-webkit-animation:h2Animation 5s;
-
 }
 
 canvas{
-
+  font-family: 'Prompt', sans-serif;
 	position:relative;
 	-webkit-animation:canvasAnimation 5s;
   padding:2.25%;
@@ -106,56 +104,39 @@ canvas{
 
 canvas#canvas1{
  background:#ff8080;
- height:7%;
- width:7%;
+ font-size:5em !important;
 
 }
 
 canvas#canvas2{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
 
 canvas#canvas3{
    background:#ff8080;
-   height:7%;
-   width:7%;
  }
 
 canvas#canvas4{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
 
 canvas#canvas5{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
 
 canvas#canvas6{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
 
 canvas#canvas7{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
 
 
 canvas#canvas8{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
 
 canvas#canvas9{
    background:#ff8080;
-   height:7%;
-   width:7%;
 }
