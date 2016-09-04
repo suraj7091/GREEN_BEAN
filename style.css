@@ -20,6 +20,101 @@ body{
   background-color:white;
   opacity:0.8;
   border-radius:1%;
+}
+
+div#box{
+	text-align:center;
+	/*width:auto;
+	height:auto;*/
+  font-size:3em;
+  padding:2%;
+  font-weight:bold;
+}
+
+.canvas{
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  align-items:center;
+  align-content:center;
+
+}
+
+h3{
+
+	position:relative;
+	-webkit-animation:h3Animation 5s;
+  font-family: font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight:lighter;
+  background-color:white;
+
+}
+
+h1{
+
+	position:relative;
+	-webkit-animation:h1Animation 5s;
+
+}
+
+h2{
+
+	position:relative;
+	-webkit-animation:h2Animation 5s;
+
+}
+
+canvas{
+
+	position:relative;
+	-webkit-animation:canvasAnimation 5s;
+  padding:2.25%;
+  border-radius:5%;
+}
+
+@-webkit-keyframes canvasAnimation {
+
+	0%   {-webkit-transform:rotate(90deg);left:0px; top:0px;}
+
+}
+
+@-webkit-keyframes h1Animation {
+
+	0%   {-webkit-transform:rotate(0deg)}
+	25%   {-webkit-transform:rotate(90deg)}
+	50%  {-webkit-transform:rotate(180deg)}
+	75%  {-webkit-transform:rotate(270deg)}
+	100%  { -webkit-transform:rotate(360deg)}
+
+}
+
+@-webkit-keyframes h2Animation{
+
+	0%   {-webkit-transform: scale(1,2);}
+	25%   {-webkit-transform: scale(2,3);}
+	50%  {-webkit-transform: scale(3,4);}
+	75%  {-webkit-transform: scale(4,5);}
+	100%  { -webkit-transform: scale(0,0);}
+}
+
+.tile {
+	background-image:url('http://i.imgur.com/nCc1HOm.png');
+	border-color:black;
+	font-size: 100px;
+	width:30%;
+	height:162px;
+	text-align: center;
+	vertical-align:text-top;
+	align:center;
+	float:left;
+	color:black;
+	/*border:single;
+	border-color:pink;
+	border-width:3px;*/
+	/*Not sure why, but having issues getting border to show up */
+	padding-top:2px
+	padding-bottom:2px;
+	padding-left:11px;
+	margin:2px;
+
 
 }
 
@@ -67,9 +162,7 @@ canvas{
 	-webkit-animation:canvasAnimation 5s;
   padding:2.25%;
   border-radius:5%;
-}
-
-@-webkit-keyframes canvasAnimation {
+  @-webkit-keyframes canvasAnimation {
 
 	0%   {-webkit-transform:rotate(90deg);left:0px; top:0px;}
 
@@ -82,8 +175,6 @@ canvas{
 	50%  {-webkit-transform:rotate(180deg)}
 	75%  {-webkit-transform:rotate(270deg)}
 	100%  { -webkit-transform:rotate(360deg)}
-
-}
 
 @-webkit-keyframes h2Animation{
 
@@ -102,9 +193,13 @@ canvas{
 
 }
 
+@-webkit-keyframes h3Animation{
+   background:#ff8080;
+}
+
 canvas#canvas1{
  background:#ff8080;
- font-size:5em !important;
+ 2px 2px 5px white;
 
 }
 
@@ -132,6 +227,9 @@ canvas#canvas7{
    background:#ff8080;
 }
 
+canvas#canvas7{
+   background:#ff8080;
+}
 
 canvas#canvas8{
    background:#ff8080;
