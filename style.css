@@ -80,6 +80,7 @@ h2{
 canvas{
   font-family: 'Prompt', sans-serif;
 	position:relative;
+  color:white;
 	-webkit-animation:canvasAnimation 5s;
   padding:2.25%;
   background-color:black;
