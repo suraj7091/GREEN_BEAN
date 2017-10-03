@@ -1,6 +1,6 @@
 
 html {
-  background: url('http://i.imgur.com/ludSdqP.jpg') no-repeat center center fixed;
+  background-color:#b3b4b7;
   font-family: 'Prompt', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,7 +19,7 @@ body{
   font-family: 'Prompt', sans-serif;
   background-color:white;
   opacity:0.8;
-  border-radius:1%;
+  border-radius:15px;
 }
 
 @-webkit-keyframes canvasAnimation {
@@ -58,7 +58,7 @@ div#box{
 h3{
 
 	position:relative;
-	-webkit-animation:h3Animation 5s;
+	-webkit-animation:h3Animation 500s;
   font-weight:lighter;
   background-color:white;
 
@@ -67,14 +67,14 @@ h3{
 h1{
 
 	position:relative;
-	-webkit-animation:h1Animation 5s;
+	-webkit-animation:h1Animation 500s;
 
 }
 
 h2{
   font-family: 'Prompt', sans-serif;
 	position:relative;
-	-webkit-animation:h2Animation 5s;
+	-webkit-animation:h2Animation 500s;
 }
 
 canvas{
@@ -82,7 +82,7 @@ canvas{
 	position:relative;
 	-webkit-animation:canvasAnimation 5s;
   padding:2.25%;
-  background-color:#ff6666;
+  background-color:#d9dbdd;
   border-radius:5%;
   @-webkit-keyframes canvasAnimation {
 
