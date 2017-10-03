@@ -1,6 +1,6 @@
 
 html {
-  background-color:#b3b4b7;
+  background-image:url('13.jpg');
   font-family: 'Prompt', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,7 +18,7 @@ body{
   margin-right:9%;
   font-family: 'Prompt', sans-serif;
   background-color:white;
-  opacity:0.8;
+  opacity:0.95;
   border-radius:15px;
 }
 
