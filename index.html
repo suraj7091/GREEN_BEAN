@@ -46,6 +46,8 @@
 					cxt.stroke();
 					cxt.closePath();
 					content[canvasNumber-1] = 'X';
+					document.getElementById("me").innerHTML = "";
+
 
 
         }
@@ -56,6 +58,7 @@
 					cxt.stroke();
 					cxt.closePath();
 					(content[canvasNumber-1] = 'O');
+					document.getElementById("me").innerHTML = "";
 				}
 
 				turn++;
@@ -64,13 +67,15 @@
 				checkForWinners(content[canvasNumber-1]);
 
 				if(squaresFilled==9){
-					alert("Good game,guys!");
-					location.reload(true);
+					document.getElementById("me").innerHTML = "good game guys";
+						var data= "<p style='font-size:25px'>Want to continue</p> <button style='background-color:#9500FF;border:none; width:100px;height:40px;' id='check' value='true' onclick='playAgain()'>yes</button><button id='check' style='background-color:#9500FF;width:100px;margin-left:30px;height:40px;border:none;' value='false' onclick='playAgain1()'>no</button>"
+					document.getElementById("first").innerHTML = data;
 				}
+
 
 			}
 			else{
-				alert("Sorry, someone got to that square already.");
+				document.getElementById("me").innerHTML = "someone has already got that box";
 			}
 
 		}
@@ -79,22 +84,25 @@
 
 			for(var a = 0; a < winningCombinations.length; a++){
 			if(content[winningCombinations[a][0]]==symbol&&content[winningCombinations[a][1]]==	symbol&&content[winningCombinations[a][2]]==symbol){
-				alert(symbol+ " You won!");
-				playAgain();
+				document.getElementById("me").innerHTML = symbol+ " You won!";
+				var data= "<p style='font-size:25px'>Want to continue</p> <button style='background-color:#9500FF;border:none; width:100px;height:40px;' id='check' value='true' onclick='playAgain()'>yes</button><button id='check' style='background-color:#9500FF;width:100px;margin-left:30px;height:40px;border:none;' value='false' onclick='playAgain1()'>no</button>"
+					document.getElementById("first").innerHTML = data;
+					
+				
 			}
 			}
 
 		}
 
 		function playAgain(){
-			y=confirm("Do you want to play again?");
-			if(y==true){
-				alert("Okay!");
+			var y=document.getElementById("check").value;
+			if(y=="true"){
 				location.reload(true);
 			}
-			else{
-				alert("See ya' around.");
 		}
+			function playAgain1(){
+			
+				document.getElementById("final").innerHTML = "See ya' around.";
 
 		}
 
@@ -102,6 +110,7 @@
 		</script>
 	</head>
 	<body>
+		<div id="first" style="width:500px;height:20px;margin-left:400px;"></div>
 		<div id ="box">
 			<h3>Tic Tac Toe Game</h3>
 			<canvas id = "canvas1"  width="50" height="50" onclick="canvasClicked(1)"></canvas>
@@ -113,6 +122,10 @@
 			<canvas id = "canvas7"  width="50" height="50" onclick="canvasClicked(7)"></canvas>
 			<canvas id = "canvas8"  width="50" height="50" onclick="canvasClicked(8)"></canvas>
 			<canvas id = "canvas9"  width="50" height="50" onclick="canvasClicked(9)"></canvas>
+                <p id="me" style="color: #FF5252"></p>
+                <p id="final"></p>
+                
 		</div>
+		
 	</body>
 </html>
